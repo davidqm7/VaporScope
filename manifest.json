@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "VaporScope: Steam Review Analyzer",
+  "version": "1.1",  
+  "description": "Uses AI to analyze Steam reviews, generating concise summaries and buying advice instantly.",
+  "icons": {
+    "16": "icons/16x16.png",
+    "32": "icons/32x32.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://store.steampowered.com/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_title": "Analyze Steam Reviews",
+    "default_icon": {
+      "16": "icons/16x16.png",
+      "32": "icons/32x32.png",
+      "48": "icons/48x48.png",
+      "128": "icons/128x128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://store.steampowered.com/app/*"],
+      "js": ["scripts/content.js"],
+      "css": ["scripts/inject.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

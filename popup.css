@@ -1,0 +1,53 @@
+body {
+  width: 350px;
+  background-color: #1b2838; /* Steam Dark Blue */
+  color: #c7d5e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+h2 { margin: 0; font-size: 18px; color: #66c0f4; }
+.status { font-size: 12px; color: #8f98a0; }
+
+#analyze-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to bottom, #47bfff 5%, #1a44c2 100%);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#analyze-btn:hover {
+  background: linear-gradient(to bottom, #5cd6ff 5%, #2a54d2 100%);
+}
+
+.card {
+  background: #171a21;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #2a475e;
+}
+
+.verdict-box { text-align: center; margin-bottom: 10px; }
+#verdict { margin: 5px 0; color: #a4d007; } /* Steam Green */
+#oneliner { font-style: italic; font-size: 13px; color: #8f98a0; }
+
+.details { display: flex; gap: 10px; font-size: 12px; }
+.col { flex: 1; }
+ul { padding-left: 20px; margin: 5px 0; }
+
+.perf-bar { margin-top: 10px; display: flex; align-items: center; gap: 10px; font-size: 12px;}
+.progress-bg { flex: 1; height: 8px; background: #000; border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: #66c0f4; transition: width 0.5s; }

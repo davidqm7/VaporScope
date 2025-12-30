@@ -1,0 +1,10 @@
+# Ignore huge dependency folders
+node_modules/
+
+# Ignore Cloudflare temporary files
+.wrangler/
+.dev.vars
+
+# Ignore system files
+.DS_Store
+Thumbs.db

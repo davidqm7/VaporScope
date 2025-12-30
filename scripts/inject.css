@@ -1,0 +1,110 @@
+/* The Main Card */
+.vapor-scope-card {
+    background: linear-gradient(135deg, #1b2838 0%, #171a21 100%);
+    border: 1px solid #3d4c5d;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-family: "Motiva Sans", Sans-serif;
+    color: #c6d4df;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header Section */
+.vs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2a475e;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.vs-logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #66c0f4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The Gold Pro Badge */
+.vs-pro-badge {
+    background: linear-gradient(to right, #e6b980, #eacda3);
+    color: #1b2838;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(230, 185, 128, 0.5);
+}
+
+/* The Verdict "Stamp" */
+.vs-verdict {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+.vs-verdict.buy { color: #a4d007; } /* Steam Green */
+.vs-verdict.wait { color: #dcb324; } /* Steam Yellow */
+.vs-verdict.avoid { color: #c02942; } /* Steam Red */
+
+.vs-one-liner {
+    font-style: italic;
+    color: #8f98a0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Pros and Cons Grid */
+.vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.vs-list-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.vs-pros .vs-list-title { color: #a4d007; }
+.vs-cons .vs-list-title { color: #c02942; }
+
+.vs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vs-list li {
+    margin-bottom: 4px;
+    padding-left: 12px;
+    position: relative;
+}
+
+/* Bullet points */
+.vs-pros li::before { content: "+"; position: absolute; left: 0; color: #a4d007; }
+.vs-cons li::before { content: "-"; position: absolute; left: 0; color: #c02942; }
+
+/* 🌀 LOADING ANIMATION (Skeleton) */
+.vs-skeleton {
+    animation: vs-pulse 1.5s infinite ease-in-out;
+}
+.vs-skeleton-title { height: 24px; width: 40%; background: #2a475e; margin-bottom: 15px; border-radius: 2px; }
+.vs-skeleton-text { height: 14px; width: 100%; background: #2a475e; margin-bottom: 8px; border-radius: 2px; }
+.vs-skeleton-text.short { width: 70%; }
+
+@keyframes vs-pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
