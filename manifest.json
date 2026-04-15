@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VaporScope: Steam Review Analyzer",
-  "version": "1.1",  
+  "version": "1.2",  
   "description": "Uses AI to analyze Steam reviews, generating concise summaries and buying advice instantly.",
   "icons": {
     "16": "icons/16x16.png",
