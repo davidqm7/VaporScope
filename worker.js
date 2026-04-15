@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // 🔒 SECURITY: Replace with your actual Extension ID
-const ALLOWED_ORIGIN = "chrome-extension://kmlbnaekaobmjmlnihnbccknnhfbocgm"; 
+const ALLOWED_ORIGIN = "chrome-extension://jjijnfboadbbebbbljkohheepooleinb"; 
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
